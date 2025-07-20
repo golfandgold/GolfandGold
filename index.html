@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Coach Golf&Gold - ผู้เชี่ยวชาญการเทรดทองคำ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f1f5f9;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+                max-height: 450px;
+            }
+        }
+        .flowchart-step {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #1A659E;
+            background-color: #ffffff;
+            color: #1A659E;
+            font-weight: bold;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            min-height: 80px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        .flowchart-arrow {
+            font-size: 2.5rem;
+            color: #F7B801;
+            margin: 0.5rem 0;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+
+        <header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-[#1A659E] tracking-tight">Golf&Gold (โค้ชกอล์ฟ)</h1>
+            <p class="mt-4 text-xl md:text-3xl font-bold text-[#F7B801]">ปลดล็อกเส้นทางสู่ความสำเร็จในการเทรดทองคำ!</p>
+        </header>
+
+        <main>
+            <section id="introduction" class="mb-12 md:mb-16">
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8 text-center">
+                    <h2 class="text-2xl md:text-3xl font-bold text-[#1A659E] mb-4">ทำความรู้จักผู้เชี่ยวชาญด้านการลงทุนในตลาดสปอตตัวจริง</h2>
+                    <p class="text-lg text-gray-700 max-w-4xl mx-auto">
+                        หากคุณกำลังมองหาโค้ชที่จะนำทางคุณสู่ความสำเร็จในตลาดทองคำสปอต โค้ชกอล์ฟ (Golf&Gold) คือคำตอบ เขาไม่ใช่แค่ผู้สอน แต่คือผู้เชี่ยวชาญตัวจริงที่จะพาคุณเข้าสู่โลกของการลงทุนทองคำอย่างมืออาชีพ ด้วยประสบการณ์ที่สั่งสมมาอย่างยาวนาน โค้ชกอล์ฟพร้อมถ่ายทอดกลยุทธ์ที่เข้าใจง่ายและใช้ได้จริงสำหรับนักเทรดทุกระดับ
+                    </p>
+                </div>
+            </section>
+
+            <section id="why-coach-golf" class="mb-12 md:mb-16">
+                 <div class="text-center mb-8">
+                    <h2 class="text-2xl md:text-3xl font-bold text-[#1A659E]">ทำไมต้องเรียนกับโค้ชกอล์ฟ?</h2>
+                    <p class="mt-2 text-md text-gray-600 max-w-3xl mx-auto">เจาะลึก 5 เหตุผลสำคัญที่ทำให้การเรียนกับโค้ชกอล์ฟคือการลงทุนที่คุ้มค่าที่สุดสำหรับเส้นทางนักเทรดของคุณ</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center">
+                        <div class="text-4xl mb-3 text-[#F7B801]">📈</div>
+                        <h3 class="font-bold text-[#1A659E]">ประสบการณ์ตรง</h3>
+                        <p class="text-sm text-gray-600 mt-1">เข้าใจตลาดอย่างลึกซึ้งจากประสบการณ์จริง</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center">
+                        <div class="text-4xl mb-3 text-[#F7B801]">💡</div>
+                        <h3 class="font-bold text-[#1A659E]">เข้าใจง่าย</h3>
+                        <p class="text-sm text-gray-600 mt-1">กลยุทธ์ใช้ได้จริง ไม่ซับซ้อน</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center">
+                        <div class="text-4xl mb-3 text-[#F7B801]">🛡️</div>
+                        <h3 class="font-bold text-[#1A659E]">บริหารความเสี่ยง</h3>
+                        <p class="text-sm text-gray-600 mt-1">ปกป้องเงินทุนเป็นอันดับแรก</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center">
+                        <div class="text-4xl mb-3 text-[#F7B801]">🧠</div>
+                        <h3 class="font-bold text-[#1A659E]">Mindset มืออาลชีพ</h3>
+                        <p class="text-sm text-gray-600 mt-1">สร้างวินัยและความมั่นใจในการเทรด</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center">
+                        <div class="text-4xl mb-3 text-[#F7B801]">👥</div>
+                        <h3 class="font-bold text-[#1A659E]">ชุมชน Trade on Air</h3>
+                        <p class="text-sm text-gray-600 mt-1">เข้าถึงข้อมูลและแลกเปลี่ยนความรู้</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section id="learning-journey" class="mb-12 md:mb-16">
+                 <div class="text-center mb-8">
+                    <h2 class="text-2xl md:text-3xl font-bold text-[#1A659E]">เส้นทางการเรียนรู้สู่ความสำเร็จ</h2>
+                    <p class="mt-2 text-md text-gray-600 max-w-3xl mx-auto">นี่คือขั้นตอนง่ายๆ ในการเริ่มต้นและเติบโตไปกับโค้ชกอล์ฟและชุมชน Trade on Air</p>
+                </div>
+                <div class="max-w-md mx-auto">
+                    <div class="flowchart-step">1. เข้าร่วมชุมชน Trade on Air</div>
+                    <div class="flowchart-arrow">↓</div>
+                    <div class="flowchart-step">2. เรียนรู้กลยุทธ์กับโค้ชกอล์ฟ</div>
+                     <div class="flowchart-arrow">↓</div>
+                    <div class="flowchart-step">3. นำความรู้ไปปรับใช้และฝึกฝน</div>
+                     <div class="flowchart-arrow">↓</div>
+                    <div class="flowchart-step bg-[#F7B801] text-white border-[#F7B801]">4. ก้าวสู่การเป็นนักเทรดที่ประสบความสำเร็จ</div>
+                </div>
+            </section>
+
+            <section id="gemini-qa" class="mb-12 md:mb-16">
+                <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                    <h2 class="text-2xl md:text-3xl font-bold text-[#1A659E] mb-4 text-center">✨ ถาม-ตอบกับ AI ผู้ช่วยด้านทองคำ</h2>
+                    <p class="text-center text-gray-600 mb-6">คุณมีคำถามเกี่ยวกับการเทรดทองคำหรือตลาดสปอตใช่ไหม? ลองถาม AI ของเราได้เลย!</p>
+                    <div class="flex flex-col md:flex-row gap-4 mb-4">
+                        <textarea id="questionInput" class="flex-grow p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#F7B801] resize-y" rows="3" placeholder="เช่น ปัจจัยอะไรบ้างที่ส่งผลต่อราคาทองคำ?"></textarea>
+                        <button id="askAiButton" class="bg-[#F7B801] text-[#1A659E] font-bold py-3 px-6 rounded-lg text-lg hover:bg-yellow-400 transition-colors duration-300 shadow-md flex-shrink-0">
+                            ถาม AI
+                        </button>
+                    </div>
+                    <div id="answerOutput" class="bg-gray-50 p-4 rounded-md border border-gray-200 min-h-[100px] text-gray-700 overflow-auto">
+                        <p class="text-center text-gray-500">คำตอบจะปรากฏที่นี่...</p>
+                    </div>
+                    <div id="loadingIndicator" class="hidden text-center mt-4 text-[#1A659E] font-semibold">
+                        กำลังคิดคำตอบ... ⏳
+                    </div>
+                </div>
+            </section>
+
+            <section id="cta">
+                <div class="bg-gradient-to-r from-[#1A659E] to-[#42D9C8] rounded-lg shadow-xl p-8 md:p-12 text-center">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white">พร้อมที่จะเริ่มต้นหรือยัง?</h2>
+                    <p class="mt-4 text-lg text-white/90 max-w-2xl mx-auto">มาร่วมเรียนรู้และเติบโตไปพร้อมกับโค้ชกอล์ฟได้ที่เพจเทรดออนแอร์ แล้วคุณจะพบว่าการเทรดทองคำไม่ใช่เรื่องยากอีกต่อไป!</p>
+                    <a href="https://www.facebook.com/TradeOnAir" target="_blank" rel="noopener noreferrer" class="mt-8 inline-block bg-[#F7B801] text-[#1A659E] font-bold py-3 px-8 rounded-lg text-lg hover:bg-yellow-400 transition-colors duration-300 shadow-lg">
+                        ติดตามเพจ Trade on Air เลย!
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center mt-12 text-sm text-gray-500">
+            <p>&copy; 2025 Coach Golf&Gold Infographic. All Rights Reserved.</p>
+            <p class="mt-1">This infographic was generated based on promotional materials for Coach Golf&Gold of Trade on Air.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const questionInput = document.getElementById('questionInput');
+        const askAiButton = document.getElementById('askAiButton');
+        const answerOutput = document.getElementById('answerOutput');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+
+        askAiButton.addEventListener('click', async () => {
+            const prompt = questionInput.value.trim();
+            if (!prompt) {
+                answerOutput.innerHTML = '<p class="text-red-500 text-center">กรุณาพิมพ์คำถามของคุณก่อนครับ!</p>';
+                return;
+            }
+
+            answerOutput.innerHTML = '';
+            loadingIndicator.classList.remove('hidden');
+            askAiButton.disabled = true;
+
+            try {
+                let chatHistory = [];
+                chatHistory.push({ role: "user", parts: [{ text: `ในฐานะผู้เชี่ยวชาญด้านการเทรดทองคำและตลาดสปอต โปรดตอบคำถามนี้อย่างกระชับและเข้าใจง่าย: ${prompt}` }] });
+                const payload = { contents: chatHistory };
+                const apiKey = "";
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    answerOutput.innerHTML = `<p>${text}</p>`;
+                } else {
+                    answerOutput.innerHTML = '<p class="text-red-500 text-center">ขออภัยครับ ไม่สามารถให้คำตอบได้ในขณะนี้ โปรดลองอีกครั้งในภายหลัง</p>';
+                }
+            } catch (error) {
+                answerOutput.innerHTML = `<p class="text-red-500 text-center">เกิดข้อผิดพลาดในการเชื่อมต่อ: ${error.message}</p>`;
+            } finally {
+                loadingIndicator.classList.add('hidden');
+                askAiButton.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
